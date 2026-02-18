@@ -1,0 +1,29 @@
+{
+	"name": "@solvebeam/solvebeam-bootstrap-pagination",
+	"version": "1.0.0",
+	"description": "Transforms the default WordPress `paginate_links()` output into Bootstrap 5 pagination component markup using the WordPress HTML API.",
+	"author": "SolveBeam",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"solvebeam",
+		"bootstrap",
+		"wordpress"
+	],
+	"homepage": "https://github.com/pronamic/solvebeam-bootstrap-pagination#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pronamic/solvebeam-bootstrap-pagination.git"
+	},
+	"bugs": {
+		"url": "https://github.com/pronamic/solvebeam-bootstrap-pagination/issues"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@wordpress/env": "^10.39.0",
+		"@wordpress/scripts": "^31.4.0"
+	},
+	"prettier": "@wordpress/prettier-config",
+	"scripts": {
+		"lint:pkg-json": "wp-scripts lint-pkg-json"
+	}
+}
