@@ -18,7 +18,8 @@
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true,
 			"composer/installers": true,
-			"automattic/jetpack-autoloader": true
+			"automattic/jetpack-autoloader": true,
+			"phpstan/extension-installer": true
 		},
 		"wp-slug": "solvebeam-bootstrap-pagination"
 	},
@@ -32,7 +33,9 @@
 		"rector/rector": "^2.3",
 		"roots/wordpress-no-content": "^6.7",
 		"wp-cli/dist-archive-command": "*",
-		"wp-cli/wp-cli-bundle": "*"
+		"wp-cli/wp-cli-bundle": "*",
+		"szepeviktor/phpstan-wordpress": "^2.0",
+		"phpstan/extension-installer": "^1.4"
 	},
 	"extra": {
 		"installer-paths": {
@@ -62,6 +65,7 @@
 			"@build",
 			"rsync --recursive --delete --verbose ./build/stage-2/languages/ ./languages/",
 			"vendor/bin/wp i18n update-po ./languages/solvebeam-bootstrap-pagination.pot"
-		]
+		],
+		"phpstan": "vendor/bin/phpstan analyze"
 	}
 }
