@@ -12,6 +12,7 @@
 .wp-env.json
 
 phpcs.xml.dist
+phpstan.neon.dist
 
 /GEMINI.md
 
@@ -20,5 +21,3 @@ phpcs.xml.dist
 /build/
 
 /node_modules/
-
-/examples/
