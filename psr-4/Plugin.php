@@ -5,10 +5,10 @@
  * @author    SolveBeam
  * @copyright 2026 SolveBeam
  * @license   GPL-2.0-or-later
- * @package   SolveBeam\WooCommerceDefaultCheckoutCountry
+ * @package   SolveBeam\WordPressBootstrapPagination
  */
 
-namespace SolveBeam\WooCommerceDefaultCheckoutCountry;
+namespace SolveBeam\WordPressBootstrapPagination;
 
 use WP_HTML_Tag_Processor;
 
@@ -46,8 +46,8 @@ final class Plugin {
 	/**
 	 * Filter `paginate_links()` output.
 	 *
-	 * @param string $output The HTML output of `paginate_links()`.
-	 * @param array  $args   The arguments passed to `paginate_links()`.
+	 * @param string                $output The HTML output of `paginate_links()`.
+	 * @param array<string, string> $args   The arguments passed to `paginate_links()`.
 	 * @return string The filtered HTML output.
 	 */
 	private function paginate_links_output( string $output, array $args ): string {
@@ -65,7 +65,7 @@ final class Plugin {
 			[
 				'tag_name'   => 'ul',
 				'class_name' => 'page-numbers',
-			] 
+			]
 		) ) {
 			$html_processor->add_class( 'pagination' );
 
