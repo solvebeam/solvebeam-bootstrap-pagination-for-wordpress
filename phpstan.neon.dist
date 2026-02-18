@@ -1,5 +1,5 @@
 parameters:
-	level: 8
+	level: max
 	paths:
 		- solvebeam-bootstrap-pagination.php
 		- psr-4
