@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "solvebeam-wordpress-plugin-governance": {
+      "source": "solvebeam/solvebeam-wordpress-plugin-governance",
+      "sourceType": "github",
+      "computedHash": "ac42d6ff4808974f4a03068d4868be018f2a1a4b2075713c31a4ecd2e9795a2b"
+    }
+  }
+}

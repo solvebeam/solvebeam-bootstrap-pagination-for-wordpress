@@ -1,0 +1,12 @@
+/.github export-ignore
+/tests export-ignore
+/node_modules export-ignore
+/phpstan.neon export-ignore
+/phpcs.xml.dist export-ignore
+/psalm.xml.dist export-ignore
+/rector.php export-ignore
+/.editorconfig export-ignore
+/.wp-env.json export-ignore
+/package.json export-ignore
+/package-lock.json export-ignore
+/composer.lock export-ignore

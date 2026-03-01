@@ -24,6 +24,11 @@
 	},
 	"prettier": "@wordpress/prettier-config",
 	"scripts": {
-		"lint:pkg-json": "wp-scripts lint-pkg-json"
+		"build": "wp-scripts build",
+		"env:clean": "wp-env clean",
+		"env:start": "wp-env start",
+		"env:stop": "wp-env stop",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"start": "wp-scripts start"
 	}
 }

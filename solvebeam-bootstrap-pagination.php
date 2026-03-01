@@ -23,6 +23,7 @@
  * Update URI:        https://www.solvebeam.com/wordpress/plugins/solvebeam-bootstrap-pagination/
  */
 
+declare(strict_types=1);
 
 namespace SolveBeam\WordPressBootstrapPagination;
 

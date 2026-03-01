@@ -8,6 +8,8 @@
  * @package   SolveBeam\WordPressBootstrapPagination
  */
 
+declare(strict_types=1);
+
 namespace SolveBeam\WordPressBootstrapPagination;
 
 use WP_HTML_Tag_Processor;
@@ -18,28 +20,27 @@ use WP_HTML_Tag_Processor;
 final class Plugin {
 	/**
 	 * Instance.
-	 *
-	 * @var self
 	 */
-	protected static $instance = null;
-
-	/**
-	 * Return instance of this class.
-	 *
-	 * @return self A single instance of this class.
-	 */
-	public static function instance() {
-		if ( null === self::$instance ) {
-			self::$instance = new self();
-		}
-
-		return self::$instance;
-	}
+	private static ?self $instance = null;
 
 	/**
 	 * Construct plugin.
 	 */
 	private function __construct() {
+		$this->register_hooks();
+	}
+
+	/**
+	 * Return instance of this class.
+	 */
+	public static function instance(): self {
+		return self::$instance ??= new self();
+	}
+
+	/**
+	 * Register hooks.
+	 */
+	private function register_hooks(): void {
 		\add_filter( 'paginate_links_output', $this->paginate_links_output( ... ), 10, 2 );
 	}
 
